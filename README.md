@@ -18,8 +18,7 @@ This is a solution to the [Rock, Paper, Scissors challenge on Frontend Mentor](h
 
 ### The challenge
 
-![Design preview for the Rock, Paper, Scissors coding challenge](./design/original/desktop-step-1.jpg)
-
+![Design preview for the Rock, Paper, Scissors coding challenge](./design/desktop-preview.jpg)
 Users should be able to:
 
 - View the optimal layout for the game depending on their device's screen size
