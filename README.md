@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- [Live site here](https://glexan14.github.io/rock-paper-scissors-web/)
+- [This website here](https://glexan14.github.io/rock-paper-scissors-web/)
 - [Frontend Mentor solution here](https://www.frontendmentor.io/solutions/a-newbies-solution-html-css-and-javascript-only-lbgdMgHpq)
 
 ## My process
