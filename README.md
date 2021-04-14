@@ -19,6 +19,7 @@ This is a solution to the [Rock, Paper, Scissors challenge on Frontend Mentor](h
 ### The challenge
 
 ![Design preview for the Rock, Paper, Scissors coding challenge](./design/desktop-preview.jpg)
+
 Users should be able to:
 
 - View the optimal layout for the game depending on their device's screen size
@@ -34,6 +35,7 @@ Users should be able to:
 ### Links
 
 - [Live site here](https://glexan14.github.io/rock-paper-scissors-web/)
+- [Frontend Mentor solution here](https://www.frontendmentor.io/solutions/a-newbies-solution-html-css-and-javascript-only-lbgdMgHpq)
 
 ## My process
 
