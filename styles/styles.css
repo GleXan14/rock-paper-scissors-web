@@ -31,24 +31,29 @@
 /** General **/
 
 * {
-    vertical-align: baseline;
-    font-weight: inherit;
-    font-family: inherit;
-    font-style: inherit;
-    font-size: 100%;
-    border: 0;
-    outline: 0;
+    outline: none;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
 body {
+    
+    font-family: var(--body-font);
     overflow-x: hidden;
     background: var(--background-gradient);
-    font-family: var(--body-font);
+    
+}
+
+.container{
     width: 100%;
-    height: 100vh;
+    max-width: var(--body-max-width-desktop);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: .5rem;
     
 }
 
@@ -57,11 +62,14 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    height: 10rem;
    
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px 10px;
+    padding: 1rem .8rem;
+    margin: 0px 0px 1% 0px;
+    
     
 }
 
@@ -130,24 +138,27 @@ header .score-container{
 main{
     position: relative;
     width: 100%;
-    height: auto;
-    margin: 5px 0px 0px 0px;
+    min-height: calc(100vh - 15rem);
+    margin: 1% 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 10px 10px;
+    
     
 }
 
 main .game-container{
+    position: relative;
     width: 60%;
-    height: 20rem;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
     padding: 1rem;
     transition: .2s;
+    
     
     
 }
@@ -156,6 +167,8 @@ main .game-container{
     position: relative;
     margin: 1rem 1rem;
     padding: .5rem .5rem;
+    
+   
     
 }
 
@@ -197,13 +210,13 @@ main .game-container{
 
 
 .game-container .btn-games img{
-    width: 40%;
+    width: 50%;
     margin: 2rem 2rem;
 }
 
 .game-container .result-container{
     position: relative;
-    width: 50%;
+    width: 60%;
     margin: 0px 1rem;
     display: flex;
     justify-content: center;
@@ -211,6 +224,7 @@ main .game-container{
     flex-direction: column;
     
     padding: .2rem;
+    
 }
 .result-container .result-text{
     font-size: 2.5rem;
@@ -226,6 +240,7 @@ main .game-container{
     width: 100%;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .result-container .btn-play-again{
@@ -245,18 +260,23 @@ main .game-container{
 }
 
 .game-container .option-container{
-    width: 50%;
+    width: 60%;
     height: 100%;
     
     position: relative;
     padding: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .option-container .text-game{
     width: 100%;
     padding: .5rem;
     text-align: center;
-    margin-bottom: 1rem;
+    
     
 }
 
@@ -267,9 +287,19 @@ main .game-container{
     text-transform: uppercase;
 }
 
+.option-container .result-option-container{
+    width: 100%;
+    height: 12rem;
+    position: relative;
+    padding: .5rem .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .option-picked{
     padding: .2rem .2rem;
-    border-radius: 200%;
+    border-radius: 100%;
 }
 
 
@@ -278,7 +308,7 @@ main .game-container{
 }
 
 
-/** Rules **/
+/** Rules button **/
 main .rules-container {
     position: relative;
     width: 95%;
@@ -317,27 +347,26 @@ main .rules-container {
 
 /* Rules window */
 .rules-window-container{
-    position: absolute;
+    position: fixed;
     width: 100%;
-    height: 102vh;
-    background: rgba(0,0,0,0);
-    border: #fff;
+    padding: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    
     z-index: -100;
     transition: .2s;
 }
 
 .rules-window-container .rules{
     position: relative;
-    width: 35%;
-    height: 70%;
+    width: 40%;
+    height: 100%;
     background: #fff;
     border-radius: 5px;
     padding: 1rem;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-direction: column;
     right: -100%;
@@ -398,23 +427,144 @@ main .rules-container {
 
 footer{
     width: 100%;
-    height: 10%;
+    height: 1rem;
     position: relative;
     bottom: 0;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    
-    
+    margin-top: 2rem;
+
 }
 .attribution { 
     position: relative;
-    font-size: 11px;
+    font-size: 1rem;
     text-align: center;
     color: #fff;
     
 }
 .attribution a { 
-    color: rgba(0,100,255,0.8); 
+    color: rgb(89, 106, 255); 
    
+}
+
+/** Media querys **/
+
+@media only screen and (max-width:900px){
+
+    /** General **/
+   
+    /** Game **/
+    .game-container .game-option{
+        padding: 1.5rem 1.5rem;
+    }
+
+    .game-container .btn-games{
+        padding: 1rem 1rem;
+    }
+    
+    .game-container .btn-games img{
+        margin: 1.5rem 2.5rem;
+    }
+    
+
+}
+
+@media only screen and (max-width:540px){
+    /** General **/
+    .container{
+        max-width: var(--body-max-width-mobile);
+    
+    }
+
+    /** Game **/
+
+    .main{
+        margin: auto;
+    }
+
+    main .game-container{
+        width: 90%;
+        height: 100%;
+        flex-direction: column;
+        padding: .1rem;
+        
+    }
+    .game-container .game-option{
+        width: 40%;
+        padding: .1rem .1rem;
+    }
+
+    .game-container .btn-games{
+        padding: .1rem .1rem;
+    }
+    
+    .game-container .btn-games img{
+        margin: 1rem 2rem;
+    }
+
+    .rock-border, .paper-border, .scissors-border {
+        
+        padding: .1rem 0rem;
+        
+    }
+    /** Rules button **/
+    main .rules-container{
+        justify-content: center;
+    }
+
+    /** Rules window**/
+
+    
+    .rules-window-container {
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        padding: 0;
+    }
+
+    .rules-window-container .rules{
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+        
+    }
+    
+
+    .rules-window-container .rules .rule-body img{
+        width: 100%;
+    }
+
+    .rules-window-container .rules .rule-body{
+        width: 100%;
+        padding: 2rem;
+    }
+
+    
+}
+
+
+@media only screen and (max-width:0){
+
+    /** Game **/
+
+    .game-container{
+        width: 100%;
+        border: 1px solid #fff;
+    }
+    .game-container .game-option{
+        width: 100%;
+        padding: 10rem 10rem;
+        border: 1px solid #fff;
+        
+    }
+
+    .game-container .btn-games{
+        padding: 0;
+    }
+    .game-container .btn-games img{
+        
+        margin:1rem 1rem;
+        border: 1px solid #fff;
+    }
 }

@@ -14,6 +14,8 @@ const option1 = document.querySelector('#option1');
 const option1Text = document.querySelector('#option1 .text');
 const option2 = document.querySelector('#option2');
 const option2Text = document.querySelector('#option2 .text');
+const userContainer = document.getElementById('userContainer');
+const cpuContainer = document.getElementById('cpuContainer');
 const gameOption1 = document.getElementById('game-option1');
 const gameOption2 = document.getElementById('game-option2');
 const gameOption3 = document.getElementById('game-option3');
@@ -29,7 +31,6 @@ const ROCK = 'rock';
 const PAPER = 'paper';
 const SCISSORS = 'scissors';
 
-const TIE = 0;
 const WIN = 1;
 const LOSE = 2;
 
@@ -155,6 +156,8 @@ function setResult(){
     option2.classList.add('option-container');
     option1Text.classList.add('text-game');
     option2Text.classList.add('text-game');
+    userContainer.classList.add('result-option-container');
+    cpuContainer.classList.add('result-option-container');
     resultContainer.classList.add('result-container');
     resultText.classList.add('result-text');
     btnPlayAgain.classList.add('btn-play-again');
@@ -170,6 +173,8 @@ function unsetResult(){
     option2.classList.remove('option-container');
     option1Text.classList.remove('text-game');
     option2Text.classList.remove('text-game');
+    userContainer.classList.remove('result-option-container');
+    cpuContainer.classList.remove('result-option-container');
     resultContainer.classList.remove('result-container');
     resultText.classList.remove('result-text');
     btnPlayAgain.classList.remove('btn-play-again');
@@ -243,14 +248,14 @@ function play(userOption,cpuOption){
 }
 
 function setPostResult(gameResult){
-    if(gameResult == 1){
+    if(gameResult == WIN){
         let punto = parseInt(score.innerHTML);
         punto += 1;
         score.innerHTML = punto;
 
         user.style.boxShadow =  '.1rem .1rem .8rem 1.5rem rgba(255,255,255,0.5)';
 
-    }else if (gameResult == 2){
+    }else if (gameResult == LOSE){
         cpu.style.boxShadow = '.1rem .1rem .8rem 1.5rem rgba(255,255,255,0.5)';
     }
 }

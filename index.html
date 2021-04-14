@@ -14,120 +14,128 @@
   </head>
   <body>
 
-    <div class="rules-window-container">
-      <div class="rules">
-        <div class="rule-header">
-          <span>Rules</span>
-          <label for="btn-rules-close" id="lb-close"><i class="fas fa-times"></i></label>
-          <button id="btn-rules-close">Rules</button>
-        </div>
-        <div class="rule-body">
-          <img src="./images/rules-img.png" alt="">
+    <div class="container">
+      
+      <div class="rules-window-container">
+        <div class="rules">
+          <div class="rule-header">
+            <span>Rules</span>
+            <label for="btn-rules-close" id="lb-close"><i class="fas fa-times"></i></label>
+            <button id="btn-rules-close">Rules</button>
+          </div>
+          <div class="rule-body">
+            <img src="./images/rules-img.png" alt="">
+          </div>
         </div>
       </div>
+  
+      <header id="header">
+        <!-- Score -->
+        <div class="score-container">
+          <div class="title">
+            <h1>Rock Paper Scissors</h1>
+          </div>
+  
+          <div class="score">
+            <h2>Score</h2>
+            <h1>0</h1>
+          </div>
+  
+        </div>
+  
+      </header>
+  
+      <main>
+        <!-- Game -->
+        <div class="game-container">
+  
+          <div class="game-option" id="game-option1">
+            <div class="rock-border">
+              <div class="btn-games">
+                <img src="./images/icon-rock.svg" alt="">
+              </div>
+            </div>
+  
+          </div>
+  
+          <div class="game-option" id="game-option2">
+            <div class="paper-border">
+                <div class="btn-games">
+                  <img src="./images/icon-paper.svg" alt="">
+                </div>
+            </div>
+  
+          </div>
+  
+  
+          <div class="game-option" id="game-option3">
+  
+            <div class="scissors-border">
+              <div class="btn-games">
+                <img src="./images/icon-scissors.svg" alt="">
+              </div>
+            </div>
+          </div>
+  
+          <!-- Result -->
+  
+            <div class="option" id="option1">
+              <div class="text">
+                <span>You picked</span>
+              </div>
+              
+              <div class="" id="userContainer">
+                <div class="" id="user">
+                  <div class="btn-games">
+                    <img src="" alt="">
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+  
+            <div class="" id="result">
+              <div>
+                <span class=""></span>
+              </div>
+              <div>
+                <button class="">Play again</button>
+              </div>
+            </div>
+  
+            <div class="option" id="option2">
+              <div class="text" >
+                <span>CPU picked</span>
+              </div>
+
+              <div class="" id="cpuContainer">
+                <div class="" id="cpu">
+                  <div class="btn-games">
+                    <img src="" alt="">
+                  </div>
+                </div>
+
+              </div>
+            </div>
+  
+        </div>
+      
+        <!-- Rules -->
+        <div class="rules-container">
+          <label for="btn-rules" id="lb-button">Rules</label>
+          <button id="btn-rules">Rules</button>
+        </div>
+  
+      </main>
+      
+      <footer>
+        <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="#">Angel Peña</a>.
+        </div>
+      </footer>
     </div>
 
-    <header id="header">
-      <!-- Score -->
-      <div class="score-container">
-        <div class="title">
-          <h1>Rock Paper Scissors</h1>
-        </div>
-
-        <div class="score">
-          <h2>Score</h2>
-          <h1>0</h1>
-        </div>
-
-      </div>
-
-    </header>
-
-    <main>
-      <!-- Game -->
-      <div class="game-container">
-
-        <div class="game-option" id="game-option1">
-          <div class="rock-border">
-            <div class="btn-games">
-              <img src="./images/icon-rock.svg" alt="">
-            </div>
-          </div>
-
-        </div>
-
-        <div class="game-option" id="game-option2">
-          <div class="paper-border">
-              <div class="btn-games">
-                <img src="./images/icon-paper.svg" alt="">
-              </div>
-          </div>
-
-        </div>
-
-
-        <div class="game-option" id="game-option3">
-
-          <div class="scissors-border">
-            <div class="btn-games">
-              <img src="./images/icon-scissors.svg" alt="">
-            </div>
-          </div>
-        </div>
-
-        <!-- Result -->
-
-          <div class="option" id="option1">
-            <div class="text">
-              <span>You picked</span>
-            </div>
-
-            <div class="" id="user">
-              <div class="btn-games">
-                <img src="" alt="">
-              </div>
-            </div>
-          </div>
-
-          <div class="" id="result">
-            <div>
-              <span class=""></span>
-            </div>
-            <div>
-              <button class="">Play again</button>
-            </div>
-          </div>
-
-          <div class="option" id="option2">
-            <div class="text" >
-              <span>CPU picked</span>
-            </div>
-
-            <div class="" id="cpu">
-              <div class="btn-games">
-                <img src="" alt="">
-              </div>
-            </div>
-          </div>
-
-      </div>
-    
-      <!-- Rules -->
-      <div class="rules-container">
-        <label for="btn-rules" id="lb-button">Rules</label>
-        <button id="btn-rules">Rules</button>
-      </div>
-
-    </main>
-    
-    
-    
-    <footer>
-      <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">Angel Peña</a>.
-      </div>
-    </footer>
 
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/e10d7b216e.js" crossorigin="anonymous"></script>
