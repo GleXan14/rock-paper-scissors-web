@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- ![Live site here](https://glexan14.github.io/rock-paper-scissors-web/)
+- [Live site here](https://glexan14.github.io/rock-paper-scissors-web/)
 
 ## My process
 
